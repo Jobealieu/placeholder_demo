@@ -11,14 +11,12 @@ That's it, no extra setup needed.
 
 The three attributes
 color
-Default is a grey color. This controls the color of the lines that make up the placeholder box. Handy if you want your placeholder to match a theme or just stand out more while you're prototyping, like the teal example in demo 2.
-
+Default is a dark blue grey (0xFF455A64). This controls the color of the lines that make up the placeholder box. Handy if you want your placeholder to match a theme or just stand out more while you're prototyping, like the teal example in demo 2.
 strokeWidth
 Default is 2.0. This controls how thick the lines are. Bumping it up (like to 6 in demo 3) makes the box a lot more noticeable, which can be useful if you're demoing something on a projector or just want it to pop visually.
 
 fallbackHeight
-Default is 400.0. This only kicks in when the widget doesn't get any constraints from its parent, like when it's just sitting in a ListView with no fixed height around it. Instead of crashing or collapsing to nothing, it falls back to this height so you always see something on screen. Same idea applies to fallbackWidth if there's no width constraint either.
-
+Default is 400.0. This only kicks in when the parent gives unbounded (unlimited) height, like a ListView does. Instead of crashing or collapsing to nothing, it falls back to this height so you always see something on screen. Same idea applies to fallbackWidth if there's no width constraint either.
 Screenshots
 ![App screenshot](screenshots/ui.png)
 
