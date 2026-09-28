@@ -1,17 +1,26 @@
-# placeholder_demo
+Placeholder Widget Demo
+A tiny Flutter app that shows off the built-in Placeholder widget, how it behaves by default, and what happens when you tweak its color, stroke width, and fallback height. There's also a mock news card layout at the bottom so you can see it used in a more realistic way.
 
-A new Flutter project.
+How to run
+1. Install Flutter if you don't have it already: https://docs.flutter.dev/get-started/install
+2. Clone this repo
+3. Run flutter pub get to grab the dependencies
+4. Run flutter run and pick whatever device or simulator you've got hooked up
 
-## Getting Started
+That's it, no extra setup needed.
 
-This project is a starting point for a Flutter application.
+The three attributes
+color
+Default is a grey color. This controls the color of the lines that make up the placeholder box. Handy if you want your placeholder to match a theme or just stand out more while you're prototyping, like the teal example in demo 2.
 
-A few resources to get you started if this is your first Flutter project:
+strokeWidth
+Default is 2.0. This controls how thick the lines are. Bumping it up (like to 6 in demo 3) makes the box a lot more noticeable, which can be useful if you're demoing something on a projector or just want it to pop visually.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+fallbackHeight
+Default is 400.0. This only kicks in when the widget doesn't get any constraints from its parent, like when it's just sitting in a ListView with no fixed height around it. Instead of crashing or collapsing to nothing, it falls back to this height so you always see something on screen. Same idea applies to fallbackWidth if there's no width constraint either.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Screenshots
+![App screenshot](screenshots/ui.png)
+
+Sources
+Flutter API docs: https://api.flutter.dev/flutter/widgets/Placeholder-class.html
