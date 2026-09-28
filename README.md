@@ -10,6 +10,7 @@ How to run
 That's it, no extra setup needed.
 
 The three attributes
+
 color
 Default is a dark blue grey (0xFF455A64). This controls the color of the lines that make up the placeholder box. Handy if you want your placeholder to match a theme or just stand out more while you're prototyping, like the teal example in demo 2.
 
