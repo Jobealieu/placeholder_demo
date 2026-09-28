@@ -12,7 +12,7 @@ class PlaceholderDemo extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Placeholder Demo')),
+        appBar: AppBar(title: const Text('Placeholder Widget Demo')),
         body: ListView(
           padding: const EdgeInsets.all(16),
           children: const [
