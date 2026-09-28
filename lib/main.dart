@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(const PlaceholderDemo());
-
+/// Demo app for Flutter's Placeholder widget.
+/// It shows three attributes: color, strokeWidth and fallbackHeight,
+/// then a mock news card as a real world use case.
 class PlaceholderDemo extends StatelessWidget {
   const PlaceholderDemo({super.key});
 
@@ -36,8 +38,8 @@ class PlaceholderDemo extends StatelessWidget {
             SizedBox(height: 24),
 
             // Demo 4: attribute 3, fallbackHeight.
-            // No SizedBox here. ListView gives unlimited height,
-            // so Placeholder uses fallbackHeight.
+            // There is no SizedBox here, so the ListView gives unlimited height.
+            // A Placeholder cannot fill unlimited space, so it uses fallbackHeight.
             Text('4. fallbackHeight'),
             Placeholder(fallbackHeight: 100),
             SizedBox(height: 24),
